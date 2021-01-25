@@ -43,6 +43,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+  * Closure is when a function reaches outwards to its parent's scope to use a variable that it cannot find within its own scope.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +66,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+  * Closure is used in the console.log in the code. You can tell it is closure because the nested function is looking outward to its parent function for the value of `name`.
 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  * What is always the same is the function being returned. the only thing that can change is the value of `name` passed to the `personalDice()` function. 
+
+c. What is the lexical scope of `newRoll`? 
+  * The lexical scope of `newRoll` is within the nested function that is being returned from `personalDice()`. 
 
 ### Task 3 - Stretch Goals
 
